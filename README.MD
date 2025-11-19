@@ -13,18 +13,21 @@ From the <module> sample.py (line 35),
 to the main method in sample.py (line 29), 
 to the run_anonymizer method in the sample.py (line 13)
 to the anonymize method in AnonymizerEngine Class (line 104)
-[complete the call stack here]
+to the _operate method in EngineBase Class (line 54)
+to the __operate_on_text method in EngineBase Class (line 86)
+to the create_operator_class method in OperatorsFactory Class (line 117)
+to line 133 in operators_factory.py
 ```
 
 * How many if/elif branches are used in selecting the operator?
-*Put your answer here*
+0
 
 * What data structure (a Python data type) exactly is used to select the operator?
-*Put your answer here*
+str
 
 * Explain how "Strategy" design pattern is reflected here.
-
-
+The operator is the "strategy" to use for anonymizing the data.
+The user selects the operator (strategy) they want to use by specifying the name of the operator (str) when they call run_anonymizer().
 ---
 
 
