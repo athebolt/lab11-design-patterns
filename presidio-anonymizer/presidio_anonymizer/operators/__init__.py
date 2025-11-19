@@ -12,6 +12,7 @@ from .keep import Keep
 from .mask import Mask
 from .redact import Redact
 from .replace import Replace
+from .initial import Initial
 
 try:
     from .ahds_surrogate import AHDSSurrogate
@@ -31,6 +32,7 @@ __all__ = [
     "Keep",
     "DeanonymizeKeep",
     "Replace",
+    "Initial"
     "Custom",
     "Encrypt",
     "Decrypt",
