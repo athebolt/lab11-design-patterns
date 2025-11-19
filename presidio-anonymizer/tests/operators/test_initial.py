@@ -11,5 +11,4 @@ def test_correct_name():
     ],
 )
 def test_given_value_for_initial(input_text, initials):
-    text = Initial().operate(input_text) == initials
-    assert text == initials
+    assert Initial().operate(input_text) == initials
